@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ProduceLabelApp",
+    "name": "Farm Labels",
     "slug": "ProduceLabelApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,14 +11,28 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+        "backgroundColor": "#E8F5E9",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ],
+      "package": "com.r117.ProduceLabelApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sharing",
+      "react-native-ble-plx",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "24de374b-5ac4-4bc6-b49a-1a90112cfb0a"
+      }
     }
   }
 }
